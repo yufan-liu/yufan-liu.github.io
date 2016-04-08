@@ -12,6 +12,10 @@ body {
   padding-left: 15px;
 }
 
+.footer {
+  margin-top: 30px;
+}
+
 /* Custom page header */
 .header {
   padding-bottom: 20px;
