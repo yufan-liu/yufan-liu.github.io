@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="{{ site.github.url }}/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description"
+          content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
+
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            /* Margin bottom by footer height */
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 40px;
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+<!-- Bootstrap -->
+<script src="{{ site.github.url }}/js/jquery-1.12.3.min.js"></script>
+<script src="{{ site.github.url }}/js/bootstrap.min.js"></script>
+
+<!-- navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">Patrick's Homepage</a>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/project.html">Project</a></li>
+            <li><a href="/slide.html">Slide</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    {{ content }}
+    asdf
+    <p>asdfasdfwqer</p>
+</div>
+
+<footer class="footer">
+    <p align="center">Created by &copy; <a href="/index.html">Patrick</a>. Hosted on <a href="">github pages</a>.</p>
+</footer>
+</body>
+</html>
